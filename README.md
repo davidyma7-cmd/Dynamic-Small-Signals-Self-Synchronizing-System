@@ -2,6 +2,7 @@ This project involves in low-amplitude signal-synchronization.
 While traditional definition of synchronization is aligning the phase, my project involves in preserving the signal's integrity and letting the signals pass to the backend device together.
 Amplitude threshold is 0.2V.
 Allows both analog and digital signal to be synchronized.
+This projects is intended to be low-cost and simple logic. Beginners to electronics engineering can definitely check this method and test this and learn.
 The signal integrity matters for fields where all the signals need to be present and the original phase relationship between each others matters.
 Some application fields include: Medical, Industrial, and Automotive.
 Medical: Allows ECG signals (already amplified ECG signals) to be gated and pass to the simultaneous ADC at the same time, allowing the ADC and backend controllers to perform task when all the signals are present.
@@ -14,4 +15,5 @@ If the computation of input signals in any application is based on the entire si
 If the computation of input signals in any application is based on only the signal after all signals arrive, my method is applicable. More testing and refinement should always be implemented for better usage.
 If the user wants a higher bandwidth, please use high-bandwidth MOSFET and OP-AMP and upgrade any other components if needed.
 The method itself does not have a frequency threshold. The components limits the bandwidth.
+This project allows low-amplitude signals to be synchronized. However, the user should always be careful and test when applying a high amplitude negative signal as the MOSFET may accidentally turn on.
 This is the schematic: <img width="1279" height="715" alt="image" src="https://github.com/user-attachments/assets/68f06d6f-8984-4be8-a3b1-4de9b0562720" />
